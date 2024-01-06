@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #6f42c1;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            width: calc(33.3333% - 2rem);
+            box-sizing: border-box;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: #6f42c1;
+        }
+
+        .card-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 2rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My Projects</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-title">MPPT using ANN and Fuzzy</div>
+            <div class="card-description">
+             Led performance analysis of Artificial Neural Networks (ANN) and fuzzy logic for optimal power point tracking in renewable energy systems.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Obstacle Detection in Autonomous Vehicle</div>
+            <div class="card-description">
+             Led development of a potent Python object detection model using a dataset of 18,000 images, excelling in challenging camera scenarios.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Personal portfolio using Web development</div>
+            <div class="card-description">
+                The website which you is see is designed and developed using Front-end tools.
+            </div>
+        </div>
+
+        <!-- Added Projects -->
+        <div class="card">
+            <div class="card-title">Shiny App Project on Economic Indicators</div>
+            <div class="card-description">
+                Utilized Shiny App to create a dynamic filter selection, effectively showcasing aggregated economic trends and refining key performance indicators analysis, including inflation, unemployment, and interest rates.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Automated Ticket Booking System</div>
+            <div class="card-description">
+                Utilized Java and Selenium to automate the journey of launching a browser, navigating to a travel website and book tickets.
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

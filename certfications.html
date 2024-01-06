@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certifications</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #6f42c1;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            width: calc(33.3333% - 2rem);
+            box-sizing: border-box;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: #6f42c1;
+        }
+
+        .card-image img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #6f42c1;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .card-footer {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 2rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My Certifications</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-title">Web development-IBM</div>
+            <div class="card-image">
+                <img alt="Python Certification" src="Html,css,java.png">
+            </div>
+            <div class="card-footer">Earned on: 12/31/2023</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Software Enginner-Goldman Sachs</div>
+            <div class="card-image">
+                <img alt="Java Certification" src="forage.png">
+            </div>
+            <div class="card-footer">Earned on: 11/23/2023</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">SQL Bootcamp-Udeamy</div>
+            <div class="card-image">
+                <img alt="Web Development Certification" src="sql.jpeg">
+            </div>
+            <div class="card-footer">Earned on: 06/24/2022</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
